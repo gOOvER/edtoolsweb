@@ -1,0 +1,291 @@
+/* Elite Dangerous Color Scheme */
+:root {
+  /* Elite Dangerous Primary Colors */
+  --ed-orange: #ff6600;
+  --ed-orange-light: #ff8533;
+  --ed-orange-dark: #cc5200;
+  --ed-blue: #00b4d8;
+  --ed-blue-light: #33c2e0;
+  --ed-blue-dark: #0090ad;
+  --ed-black: #0a0a0a;
+  --ed-dark-grey: #1a1a1a;
+  --ed-grey: #2a2a2a;
+  --ed-light-grey: #404040;
+  --ed-text-light: #e0e0e0;
+  --ed-text-orange: #ffaa66;
+  
+  /* Elite Dangerous Gradients */
+  --ed-gradient-orange: linear-gradient(135deg, var(--ed-orange) 0%, var(--ed-orange-dark) 100%);
+  --ed-gradient-blue: linear-gradient(135deg, var(--ed-blue) 0%, var(--ed-blue-dark) 100%);
+  --ed-gradient-dark: linear-gradient(135deg, var(--ed-black) 0%, var(--ed-dark-grey) 100%);
+}
+
+/* Dark Theme (Default) */
+[data-md-color-scheme="elite-dark"] {
+  --md-primary-fg-color: var(--ed-orange);
+  --md-primary-fg-color--light: var(--ed-orange-light);
+  --md-primary-fg-color--dark: var(--ed-orange-dark);
+  --md-accent-fg-color: var(--ed-blue);
+  --md-accent-fg-color--transparent: rgba(0, 180, 216, 0.1);
+  
+  /* Background colors */
+  --md-default-bg-color: var(--ed-black);
+  --md-default-fg-color: var(--ed-text-light);
+  --md-default-fg-color--light: rgba(224, 224, 224, 0.54);
+  --md-default-fg-color--lighter: rgba(224, 224, 224, 0.32);
+  --md-default-fg-color--lightest: rgba(224, 224, 224, 0.12);
+  
+  /* Code colors */
+  --md-code-bg-color: var(--ed-dark-grey);
+  --md-code-fg-color: var(--ed-text-orange);
+  
+  /* Admonition colors */
+  --md-admonition-bg-color: rgba(26, 26, 26, 0.8);
+  
+  /* Navigation colors */
+  --md-nav-bg-color: var(--ed-dark-grey);
+  --md-nav-fg-color: var(--ed-text-light);
+  
+  /* Footer colors */
+  --md-footer-bg-color: var(--ed-black);
+  --md-footer-bg-color--dark: var(--ed-dark-grey);
+}
+
+/* Light Theme */
+[data-md-color-scheme="elite-light"] {
+  --md-primary-fg-color: var(--ed-orange-dark);
+  --md-primary-fg-color--light: var(--ed-orange);
+  --md-primary-fg-color--dark: #b8440088;
+  --md-accent-fg-color: var(--ed-blue-dark);
+  
+  /* Background colors for light mode */
+  --md-default-bg-color: #fafafa;
+  --md-default-fg-color: #333333;
+  --md-default-fg-color--light: rgba(0, 0, 0, 0.54);
+  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.32);
+  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.12);
+}
+
+/* Header customization */
+.md-header {
+  background: var(--ed-gradient-dark);
+  border-bottom: 2px solid var(--ed-orange);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+}
+
+.md-header__title {
+  color: var(--ed-orange);
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+}
+
+/* Navigation styling */
+.md-nav__link:hover {
+  background: rgba(255, 102, 0, 0.1);
+  border-left: 3px solid var(--ed-orange);
+}
+
+.md-nav__link--active {
+  background: rgba(255, 102, 0, 0.2);
+  border-left: 3px solid var(--ed-orange);
+  color: var(--ed-orange);
+}
+
+/* Tabs styling */
+.md-tabs {
+  background: var(--ed-gradient-dark);
+  border-bottom: 1px solid var(--ed-orange);
+}
+
+.md-tabs__link {
+  color: var(--ed-text-light);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.md-tabs__link:hover {
+  color: var(--ed-orange);
+  opacity: 1;
+  text-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+.md-tabs__link--active {
+  color: var(--ed-orange);
+  opacity: 1;
+  border-bottom: 2px solid var(--ed-orange);
+}
+
+/* Button styling */
+.md-button {
+  background: var(--ed-gradient-orange);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(255, 102, 0, 0.3);
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
+}
+
+.md-button--primary {
+  background: var(--ed-gradient-blue);
+  box-shadow: 0 2px 10px rgba(0, 180, 216, 0.3);
+}
+
+.md-button--primary:hover {
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.4);
+}
+
+/* Code block styling */
+.md-typeset code,
+.md-typeset pre {
+  background: var(--ed-dark-grey);
+  border: 1px solid var(--ed-grey);
+  border-radius: 4px;
+}
+
+.md-typeset .highlight {
+  border-left: 4px solid var(--ed-orange);
+  background: linear-gradient(90deg, rgba(255, 102, 0, 0.1) 0%, transparent 100%);
+}
+
+/* Search styling */
+.md-search__form {
+  background: var(--ed-dark-grey);
+  border: 1px solid var(--ed-orange);
+  border-radius: 4px;
+}
+
+.md-search__input {
+  background: transparent;
+  color: var(--ed-text-light);
+}
+
+.md-search__input::placeholder {
+  color: rgba(224, 224, 224, 0.5);
+}
+
+/* Admonition styling */
+.md-typeset .admonition {
+  border: 1px solid var(--ed-grey);
+  border-left: 4px solid var(--ed-orange);
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.md-typeset .admonition.note {
+  border-left-color: var(--ed-blue);
+}
+
+.md-typeset .admonition.tip {
+  border-left-color: var(--ed-orange);
+}
+
+.md-typeset .admonition.warning {
+  border-left-color: #ffa500;
+}
+
+.md-typeset .admonition.danger {
+  border-left-color: #ff4444;
+}
+
+/* Footer styling */
+.md-footer {
+  background: var(--ed-gradient-dark);
+  border-top: 2px solid var(--ed-orange);
+}
+
+.md-footer-meta {
+  background: var(--ed-black);
+}
+
+/* Custom Elite Dangerous specific styles */
+.ed-tool-card {
+  background: var(--ed-gradient-dark);
+  border: 1px solid var(--ed-grey);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ed-tool-card:hover {
+  border-color: var(--ed-orange);
+  box-shadow: 0 6px 25px rgba(255, 102, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.ed-tool-card h3 {
+  color: var(--ed-orange);
+  margin-bottom: 0.5rem;
+}
+
+.ed-status-online {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.ed-status-offline {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.ed-status-maintenance {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+/* Elite Dangerous icons and decorations */
+.ed-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  vertical-align: text-bottom;
+}
+
+/* Responsive design */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background: var(--ed-gradient-dark);
+    color: var(--ed-orange);
+  }
+}
+
+/* Animation for Elite Dangerous feel */
+@keyframes ed-glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+  }
+}
+
+.ed-glow {
+  animation: ed-glow 2s ease-in-out infinite;
+}
+
+/* HUD-style borders */
+.ed-hud-border {
+  border: 2px solid var(--ed-orange);
+  border-radius: 0;
+  position: relative;
+  background: rgba(10, 10, 10, 0.8);
+}
+
+.ed-hud-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 1px solid var(--ed-blue);
+  border-radius: 0;
+  z-index: -1;
+}
