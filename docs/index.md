@@ -2,7 +2,18 @@
 
 <div class="cmdr-greeting"></div>
 
-Welcome to the most comprehensive collection of tools and resources for Elite Dangerous Commanders! This website provides everything you need for your journeys through the galaxy.
+---
+title: Elite Dangerous Tools
+description: Comprehensive tools and resources for Elite Dangerous commanders
+tags:
+  - home
+  - tools
+  - elite-dangerous
+---
+
+# Elite Dangerous Tools
+
+Welcome to the comprehensive Elite Dangerous tools website! Here you'll find everything you need to enhance your journey through the galaxy.
 
 ## 🚀 Latest Updates
 

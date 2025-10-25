@@ -58,8 +58,37 @@ theme:
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang: 
+        - en
+        - de
   - minify:
       minify_html: true
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      timezone: Europe/Berlin
+      locale: en
+      fallback_to_build_date: false
+      enabled: true
+  - git-committers:
+      repository: gOOvER/edtoolsweb
+      branch: main
+  - redirects:
+      redirect_maps:
+        'old-page.md': 'new-page.md'
 
 # Customization
 extra:
@@ -68,12 +97,36 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/edtoolsweb
+      link: https://github.com/gOOvER/edtoolsweb
+      name: GitHub Repository
     - icon: fontawesome/brands/discord
       link: https://discord.gg/elitedangerous
+      name: Elite Dangerous Discord
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/EliteDangerous/
+      name: Elite Dangerous Reddit
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/EliteDangerous
+      name: Elite Dangerous Twitter
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/EliteDangerousOfficial
+      name: Elite Dangerous YouTube
   status:
     new: Recently added
     deprecated: Deprecated
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    Python: python
+    Trading: trading
+    Combat: combat
+    Exploration: exploration
+    Engineering: engineering
+  privacy:
+    enabled: true
+    title: Privacy Policy
+    description: This website uses cookies and analytics to improve user experience.
 
 extra_css:
   - stylesheets/extra.css
@@ -98,8 +151,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -159,6 +212,7 @@ nav:
     - community/forums.md
     - community/contribute.md
   - About: about.md
+  - Privacy: privacy.md
   - Language:
     - English: index.md
     - Deutsch: de/index.md

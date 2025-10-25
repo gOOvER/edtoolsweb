@@ -1,4 +1,12 @@
-# Route Planner
+---
+title: Route Planner
+description: Plan optimal routes through the galaxy with neutron boost calculations
+tags:
+  - exploration
+  - routing
+  - neutron
+  - travel
+---
 
 # Route Planner
 

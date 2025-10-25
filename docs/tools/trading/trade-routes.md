@@ -1,3 +1,13 @@
+---
+title: Trade Routes
+description: Find profitable trade routes based on current market data
+tags:
+  - trading
+  - profit
+  - routes
+  - economy
+---
+
 # Trade Routes
 
 <div class="tool-header">

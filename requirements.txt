@@ -8,6 +8,22 @@ mkdocs-material>=9.4.6
 pymdown-extensions>=10.3.1
 mkdocs-minify-plugin>=0.7.1
 
+# Navigation and Structure
+mkdocs-awesome-pages-plugin>=2.9.2
+mkdocs-section-index>=0.3.8
+
+# Content Enhancement
+mkdocs-glightbox>=0.3.7
+mkdocs-git-revision-date-localized-plugin>=1.2.0
+mkdocs-git-committers-plugin-2>=1.2.0
+mkdocs-redirects>=1.2.1
+
+# Search and Discovery
+# Note: Tags functionality is built into Material theme (no separate plugin needed)
+
+# Social and Sharing  
+# Note: Social cards need git and pillow dependencies
+
 # Additional utilities
 Pillow>=10.0.1
 cairosvg>=2.7.1
