@@ -1,0 +1,25 @@
+# Elite Dangerous Tools Website - Cloudflare Pages Requirements
+
+# MkDocs and Theme
+mkdocs>=1.5.3
+mkdocs-material>=9.4.6
+
+# Extensions and Plugins
+pymdown-extensions>=10.3.1
+mkdocs-minify-plugin>=0.7.1
+
+# Navigation and Structure
+mkdocs-awesome-pages-plugin>=2.9.2
+mkdocs-section-index>=0.3.8
+
+# Content Enhancement
+mkdocs-glightbox>=0.3.7
+mkdocs-redirects>=1.2.1
+
+# Git plugins disabled for Cloudflare Pages
+# mkdocs-git-revision-date-localized-plugin>=1.2.0
+# mkdocs-git-committers-plugin-2>=1.2.0
+
+# Social and images support
+Pillow>=10.0.1
+cairosvg>=2.7.1

@@ -30,10 +30,14 @@
   
   /* Background colors */
   --md-default-bg-color: var(--ed-black);
-  --md-default-fg-color: var(--ed-text-light);
-  --md-default-fg-color--light: rgba(224, 224, 224, 0.54);
-  --md-default-fg-color--lighter: rgba(224, 224, 224, 0.32);
-  --md-default-fg-color--lightest: rgba(224, 224, 224, 0.12);
+  --md-default-fg-color: #e8e8e8;  /* Lighter for better readability */
+  --md-default-fg-color--light: rgba(232, 232, 232, 0.7);  /* Improved contrast */
+  --md-default-fg-color--lighter: rgba(232, 232, 232, 0.5);
+  --md-default-fg-color--lightest: rgba(232, 232, 232, 0.2);
+  
+  /* Improved text colors for dark theme */
+  --md-typeset-color: #e8e8e8;  /* Main text - lighter */
+  --md-typeset-a-color: var(--ed-orange-light);  /* Links - brighter orange */
   
   /* Code colors */
   --md-code-bg-color: var(--ed-dark-grey);
@@ -44,7 +48,7 @@
   
   /* Navigation colors */
   --md-nav-bg-color: var(--ed-dark-grey);
-  --md-nav-fg-color: var(--ed-text-light);
+  --md-nav-fg-color: #e8e8e8;  /* Better nav text visibility */
   
   /* Footer colors */
   --md-footer-bg-color: var(--ed-black);
@@ -58,12 +62,16 @@
   --md-primary-fg-color--dark: #b8440088;
   --md-accent-fg-color: var(--ed-blue-dark);
   
-  /* Background colors for light mode */
+  /* Background colors for light mode - improved contrast */
   --md-default-bg-color: #fafafa;
-  --md-default-fg-color: #333333;
-  --md-default-fg-color--light: rgba(0, 0, 0, 0.54);
-  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.32);
-  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.12);
+  --md-default-fg-color: #212121;  /* Darker grey instead of too dark black */
+  --md-default-fg-color--light: rgba(33, 33, 33, 0.7);  /* Better contrast */
+  --md-default-fg-color--lighter: rgba(33, 33, 33, 0.5);
+  --md-default-fg-color--lightest: rgba(33, 33, 33, 0.2);
+  
+  /* Improved text contrast for light theme */
+  --md-typeset-color: #212121;  /* Main text color */
+  --md-typeset-a-color: var(--ed-orange-dark);  /* Link color */
 }
 
 /* Header customization */
@@ -285,7 +293,67 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  border: 1px solid var(--ed-blue);
-  border-radius: 0;
+  background: var(--ed-gradient-orange);
   z-index: -1;
+  opacity: 0.1;
+}
+
+/* Improved text readability fixes */
+/* Main content text */
+.md-content__inner {
+  color: var(--md-typeset-color) !important;
+}
+
+/* Paragraph text */
+.md-typeset p {
+  color: var(--md-typeset-color) !important;
+  line-height: 1.6;
+}
+
+/* List items */
+.md-typeset li {
+  color: var(--md-typeset-color) !important;
+}
+
+/* Table text */
+.md-typeset td, 
+.md-typeset th {
+  color: var(--md-typeset-color) !important;
+}
+
+/* Code blocks text contrast */
+.md-typeset code {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Link improvements */
+.md-typeset a {
+  color: var(--md-typeset-a-color) !important;
+  text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  color: var(--ed-orange-light) !important;
+  text-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+}
+
+/* Header text improvements */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--ed-orange) !important;
+  font-weight: bold;
+}
+
+/* Card text readability */
+.ed-tool-card p,
+.ed-tool-card li {
+  color: var(--md-typeset-color) !important;
+  text-shadow: none;
 }

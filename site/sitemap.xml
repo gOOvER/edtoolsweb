@@ -1,115 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://edtools.pages.dev/</loc>
+         <loc>https://edtools.example.com/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/about/</loc>
+         <loc>https://edtools.example.com/about/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/privacy/</loc>
+         <loc>https://edtools.example.com/privacy/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tags/</loc>
+         <loc>https://edtools.example.com/tags/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/community/</loc>
+         <loc>https://edtools.example.com/community/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/community/contribute/</loc>
+         <loc>https://edtools.example.com/community/contribute/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/community/discord/</loc>
+         <loc>https://edtools.example.com/community/discord/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/community/forums/</loc>
+         <loc>https://edtools.example.com/community/forums/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/de/</loc>
+         <loc>https://edtools.example.com/de/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/</loc>
+         <loc>https://edtools.example.com/resources/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/apis/capi/</loc>
+         <loc>https://edtools.example.com/resources/apis/capi/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/apis/eddn/</loc>
+         <loc>https://edtools.example.com/resources/apis/eddn/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/databases/eddb/</loc>
+         <loc>https://edtools.example.com/resources/databases/eddb/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/databases/edsm/</loc>
+         <loc>https://edtools.example.com/resources/databases/edsm/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/resources/databases/inara/</loc>
+         <loc>https://edtools.example.com/resources/databases/inara/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/</loc>
+         <loc>https://edtools.example.com/tools/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/combat/conflict-zones/</loc>
+         <loc>https://edtools.example.com/tools/combat/conflict-zones/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/combat/loadout-analyzer/</loc>
+         <loc>https://edtools.example.com/tools/combat/loadout-analyzer/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/combat/ship-builder/</loc>
+         <loc>https://edtools.example.com/tools/combat/ship-builder/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/engineering/blueprint-calculator/</loc>
+         <loc>https://edtools.example.com/tools/engineering/blueprint-calculator/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/engineering/guardian-sites/</loc>
+         <loc>https://edtools.example.com/tools/engineering/guardian-sites/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/engineering/material-finder/</loc>
+         <loc>https://edtools.example.com/tools/engineering/material-finder/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/exploration/neutron-router/</loc>
+         <loc>https://edtools.example.com/tools/exploration/neutron-router/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/exploration/route-planner/</loc>
+         <loc>https://edtools.example.com/tools/exploration/route-planner/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/exploration/system-search/</loc>
+         <loc>https://edtools.example.com/tools/exploration/system-search/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/trading/commodity-finder/</loc>
+         <loc>https://edtools.example.com/tools/trading/commodity-finder/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/trading/market-data/</loc>
+         <loc>https://edtools.example.com/tools/trading/market-data/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
     <url>
-         <loc>https://edtools.pages.dev/tools/trading/trade-routes/</loc>
+         <loc>https://edtools.example.com/tools/trading/trade-routes/</loc>
          <lastmod>2025-10-25</lastmod>
     </url>
 </urlset>

@@ -1,21 +1,19 @@
+# Elite Dangerous Tools Website
+
 site_name: Elite Dangerous Tools
-site_description: A comprehensive collection of tools and resources for Elite Dangerous Commanders
-site_author: CMDR Tools Team
-site_url: https://edtools.pages.dev
+site_description: Comprehensive tools and resources for Elite Dangerous commanders
+site_author: gOOvER
+site_url: https://edtools.example.com
 
 # Repository
-repo_name: Elite Dangerous Tools
-repo_url: https://github.com/yourusername/edtoolsweb
+repo_name: gOOvER/edtoolsweb
+repo_url: https://github.com/gOOvER/edtoolsweb
 edit_uri: edit/main/docs/
-
-# Copyright
-copyright: Copyright &copy; 2025 Elite Dangerous Tools
 
 # Configuration
 theme:
   name: material
-  # Explicitly disable custom_dir to prevent Cloudflare Pages issues
-  # custom_dir: null
+  # Cloudflare Pages compatibility - no custom_dir
   features:
     - announce.dismiss
     - content.action.edit
@@ -56,7 +54,7 @@ theme:
   icon:
     logo: material/rocket-launch
 
-# Plugins
+# Plugins - Cloudflare Pages compatible
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -78,16 +76,17 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-      timezone: Europe/Berlin
-      locale: en
-      fallback_to_build_date: false
-      enabled: true
-  - git-committers:
-      repository: gOOvER/edtoolsweb
-      branch: main
+  # Git plugins disabled for Cloudflare Pages compatibility
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  #     timezone: Europe/Berlin
+  #     locale: en
+  #     fallback_to_build_date: false
+  #     enabled: true
+  # - git-committers:
+  #     repository: gOOvER/edtoolsweb
+  #     branch: main
   - redirects:
       redirect_maps:
         'old-page.md': 'new-page.md'
