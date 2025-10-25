@@ -1,0 +1,13 @@
+# Elite Dangerous Tools Website - Requirements
+
+# MkDocs and Theme
+mkdocs>=1.5.3
+mkdocs-material>=9.4.6
+
+# Extensions and Plugins
+pymdown-extensions>=10.3.1
+mkdocs-minify-plugin>=0.7.1
+
+# Additional utilities
+Pillow>=10.0.1
+cairosvg>=2.7.1

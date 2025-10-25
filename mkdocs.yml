@@ -1,0 +1,165 @@
+site_name: Elite Dangerous Tools
+site_description: A comprehensive collection of tools and resources for Elite Dangerous Commanders
+site_author: CMDR Tools Team
+site_url: https://edtools.pages.dev
+
+# Repository
+repo_name: Elite Dangerous Tools
+repo_url: https://github.com/yourusername/edtoolsweb
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Elite Dangerous Tools
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    # Elite Dangerous Color Scheme
+    - scheme: elite-dark
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: elite-light
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  icon:
+    logo: material/rocket-launch
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/edtoolsweb
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/elitedangerous
+  status:
+    new: Recently added
+    deprecated: Deprecated
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Tools:
+    - tools/index.md
+    - Exploration:
+      - tools/exploration/route-planner.md
+      - tools/exploration/system-search.md
+      - tools/exploration/neutron-router.md
+    - Trading:
+      - tools/trading/trade-routes.md
+      - tools/trading/commodity-finder.md
+      - tools/trading/market-data.md
+    - Engineering:
+      - tools/engineering/material-finder.md
+      - tools/engineering/blueprint-calculator.md
+      - tools/engineering/guardian-sites.md
+    - Combat:
+      - tools/combat/ship-builder.md
+      - tools/combat/loadout-analyzer.md
+      - tools/combat/conflict-zones.md
+  - Resources:
+    - resources/index.md
+    - Databases:
+      - resources/databases/eddb.md
+      - resources/databases/inara.md
+      - resources/databases/edsm.md
+    - APIs:
+      - resources/apis/eddn.md
+      - resources/apis/capi.md
+  - Community:
+    - community/index.md
+    - community/discord.md
+    - community/forums.md
+    - community/contribute.md
+  - About: about.md
+  - Language:
+    - English: index.md
+    - Deutsch: de/index.md
