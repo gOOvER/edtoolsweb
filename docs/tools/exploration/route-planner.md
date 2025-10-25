@@ -1,55 +1,58 @@
 # Route Planner
 
-Der Elite Dangerous Route Planner hilft Ihnen dabei, optimale Routen durch die Galaxis zu berechnen.
+# Route Planner
+
+The Elite Dangerous Route Planner helps you calculate optimal routes through the galaxy.
 
 ## 🗺️ Features
 
 <div class="ed-tool-card">
-  <h3>✨ Intelligente Routenberechnung</h3>
+  <h3>✨ Intelligent Route Calculation</h3>
   <ul>
-    <li><strong>Sprungreichweiten-Optimierung</strong>: Berücksichtigung Ihrer Schiffsspezifikationen</li>
-    <li><strong>Treibstoff-Management</strong>: Automatische Tankstopps einplanen</li>
-    <li><strong>Neutronenstern-Routing</strong>: FSD-Boost für Langstrecken nutzen</li>
-    <li><strong>Gefahrenzonen-Vermeidung</strong>: Permit-locked und gefährliche Systeme ausschließen</li>
+    <li><strong>Jump Range Optimization</strong>: Consider your ship specifications</li>
+    <li><strong>Fuel Management</strong>: Plan automatic refueling stops</li>
+    <li><strong>Neutron Star Routing</strong>: Use FSD boost for long distances</li>
+    <li><strong>Danger Zone Avoidance</strong>: Exclude permit-locked and dangerous systems</li>
   </ul>
 </div>
 
-## 🚀 Verwendung
+## 🚀 Usage
 
-### Basis-Routing
+### Basic Routing
 ```
 Start: Sol
-Ziel: Colonia
-Sprungreichweite: 50 LY
-Neutronensterne: Aktiviert
+Destination: Colonia
+Jump Range: 50 LY
+Neutron Stars: Enabled
 ```
 
-### Erweiterte Optionen
-- **Wirtschaftsrouting**: Minimale Sprünge
-- **Schnellrouting**: Direkte Route
-- **Exploration**: Unentdeckte Systeme bevorzugen
-- **Material-Sammeln**: Systeme mit spezifischen Ressourcen
+### Advanced Options
 
-## 📊 API-Integration
+- **Economic Routing**: Minimum jumps
+- **Fast Routing**: Direct route
+- **Exploration**: Prefer undiscovered systems
+- **Material Collection**: Systems with specific resources
 
-Unser Route Planner nutzt Echtzeitdaten von:
+## 📊 API Integration
 
-- **EDSM**: Aktualisierte Systemdaten
-- **Spansh**: Neutronenstern-Datenbank
-- **EDDB**: Stationsinformationen
-- **Eigene Algorithmen**: Optimierte Pfadfindung
+Our Route Planner uses real-time data from:
 
-## 🛠️ Technische Details
+- **EDSM**: Updated system data
+- **Spansh**: Neutron star database
+- **EDDB**: Station information
+- **Custom Algorithms**: Optimized pathfinding
 
-### Algorithmus
-Der Planner verwendet einen modifizierten A*-Algorithmus:
+## 🛠️ Technical Details
+
+### Algorithm
+The planner uses a modified A* algorithm:
 
 ```python
 def calculate_route(start, destination, jump_range, options):
-    # Heuristik für optimale Pfadfindung
+    # Heuristic for optimal pathfinding
     heuristic = lambda pos: distance_to_goal(pos, destination)
     
-    # Neutronenstern-Boost berücksichtigen
+    # Consider neutron star boost
     if options.use_neutron_stars:
         jump_range *= NEUTRON_BOOST_FACTOR
     
@@ -57,36 +60,37 @@ def calculate_route(start, destination, jump_range, options):
 ```
 
 ### Performance
-- **Durchschnittliche Berechnungszeit**: < 2 Sekunden
-- **Maximale Entfernung**: 65.000 LY
-- **Datenbankgröße**: 85+ Millionen Systeme
 
-## 🎯 Tipps für Commanders
+- **Average calculation time**: < 2 seconds
+- **Maximum distance**: 65,000 LY
+- **Database size**: 85+ million systems
 
-!!! tip "Sprungreichweite optimieren"
-    - Engineering Ihres FSD-Antriebs kann die Reichweite um bis zu 50% erhöhen
-    - Leichterer Schiffsaufbau = größere Sprungreichweite
-    - Guardian-FSD-Booster für zusätzliche +10.5 LY
+## 🎯 Tips for Commanders
 
-!!! warning "Neutronensterne"
-    Neutronensterne geben 4x Sprungreichweite, aber:
-    - Schäden am FSD nach ~100 Sprüngen
-    - AFMU (Auto Field-Maintenance Unit) empfohlen
-    - Vorsichtiges Andocken an den Jet-Cone
+!!! tip "Optimize Jump Range"
+    - Engineering your FSD drive can increase range by up to 50%
+    - Lighter ship builds = greater jump range
+    - Guardian FSD Booster for an additional +10.5 LY
 
-!!! note "Treibstoff-Management"
-    - Fuel Scoop für Langstreckenreisen unverzichtbar
-    - KGBFOAM-Sterne sind tankbar
-    - Notfall-Kontakt: [Fuel Rats](https://fuelrats.com)
+!!! warning "Neutron Stars"
+    Neutron stars provide 4x jump range, but:
+    - FSD damage after ~100 jumps
+    - AFMU (Auto Field-Maintenance Unit) recommended
+    - Careful approach to the jet cone
+
+!!! note "Fuel Management"
+    - Fuel scoop essential for long-distance travel
+    - KGBFOAM stars are scoopable
+    - Emergency contact: [Fuel Rats](https://fuelrats.com)
 
 ## 📱 Mobile App
 
-Der Route Planner ist auch als mobile App verfügbar:
+The Route Planner is also available as a mobile app:
 
 - **Android**: Elite Navigator
 - **iOS**: ED Route Planner
-- **Progressive Web App**: Funktioniert offline
+- **Progressive Web App**: Works offline
 
 ---
 
-*Sichere Reisen, Commander! o7*
+*Safe travels, Commander! o7*

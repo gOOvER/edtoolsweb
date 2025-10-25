@@ -1,40 +1,46 @@
 # Ressourcen
 
-Hier finden Sie eine umfassende Sammlung von Ressourcen, APIs und Datenbanken für Elite Dangerous.
+# Resources
 
-## 📊 Datenbanken
+Here you'll find a comprehensive collection of resources, APIs, and databases for Elite Dangerous.
+
+## 📊 Databases
 
 ### Elite Dangerous Database (EDDB)
-Die umfassendste Datenbank für Elite Dangerous:
-- **Systeme & Stationen**: Vollständige galaktische Karte
-- **Marktdaten**: Aktuelle Preise und Verfügbarkeit
-- **Schiffe & Module**: Komplette Ausrüstungslisten
-- **Commodities**: Handelsgüter und Marktanalysen
+The most comprehensive database for Elite Dangerous:
 
-[🔗 EDDB besuchen](https://eddb.io)
+- **Systems & Stations**: Complete galactic map
+- **Market Data**: Current prices and availability
+- **Ships & Modules**: Complete equipment lists
+- **Commodities**: Trade goods and market analysis
+
+[🔗 Visit EDDB](https://eddb.io)
 
 ### Elite Dangerous Star Map (EDSM)
-Kartographie und Exploration:
-- **3D Galaktische Karte**: Interaktive Sternennavigation
-- **Entdeckungsjournal**: Commander-spezifische Daten
-- **Statistiken**: Persönliche Exploration-Metriken
-- **Routen-API**: Für Tool-Entwickler
+Cartography and exploration:
 
-[🔗 EDSM besuchen](https://www.edsm.net)
+- **3D Galactic Map**: Interactive star navigation
+- **Discovery Journal**: Commander-specific data
+- **Statistics**: Personal exploration metrics
+- **Route API**: For tool developers
+
+[🔗 Visit EDSM](https://www.edsm.net)
 
 ### Inara
-Community-getriebene Datenbank:
-- **Commander Profile**: Öffentliche Profile und Logs
-- **Squadron Management**: Gruppenorganisation
-- **Engineering Database**: Material- und Blueprint-Tracking
-- **Trade Data**: Community-basierte Marktdaten
+Community-driven database:
 
-[🔗 Inara besuchen](https://inara.cz)
+- **Commander Profiles**: Public profiles and logs
+- **Squadron Management**: Group organization
+- **Engineering Database**: Material and blueprint tracking
+- **Trade Data**: Community-based market data
+
+[🔗 Visit Inara](https://inara.cz)
 
 ## 🔌 APIs
 
 ### Elite Dangerous Data Network (EDDN)
-Echtzeit-Datenstream:
+Real-time data stream:
+
 ```json
 {
   "header": {
@@ -50,29 +56,33 @@ Echtzeit-Datenstream:
 ```
 
 ### Companion API (CAPI)
-Offizieller Frontier API:
-- **Spieler-Daten**: Schiffe, Credits, Ranks
-- **Markt-Informationen**: Aktuelle Station-Daten
-- **Journal-Integration**: Automatische Updates
+Official Frontier API:
+
+- **Player Data**: Ships, credits, ranks
+- **Market Information**: Current station data
+- **Journal Integration**: Automatic updates
 
 ### Spansh API
-Routing und Navigation:
+Routing and navigation:
+
 ```bash
-# Neutron Route berechnen
+# Calculate neutron route
 curl "https://spansh.co.uk/api/route" \
   -d "efficiency=60&range=50&source=Sol&destination=Colonia"
 ```
 
-## 🛠️ Entwickler-Tools
+## 🛠️ Developer Tools
 
 ### EDMarketConnector (EDMC)
-Desktop-Application für automatische Datenübertragung:
-- **Plugins**: Erweiterte Funktionalität
-- **Journal Monitoring**: Automatische Updates
-- **EDDN Integration**: Daten-Broadcasting
+Desktop application for automatic data transmission:
+
+- **Plugins**: Extended functionality
+- **Journal Monitoring**: Automatic updates
+- **EDDN Integration**: Data broadcasting
 
 ### Elite Dangerous Journal
-Spiel-interne Log-Dateien:
+In-game log files:
+
 ```json
 {
   "timestamp": "2025-10-25T12:00:00Z",
@@ -83,20 +93,22 @@ Spiel-interne Log-Dateien:
 }
 ```
 
-## 📚 Dokumentation
+## 📚 Documentation
 
-### API Dokumentationen
-- **EDDN Schema**: Datenformat-Spezifikationen
-- **EDSM API**: Vollständige Endpoint-Referenz
-- **Inara API**: Community-Daten Zugriff
-- **Journal Events**: Frontier's offizielle Dokumentation
+### API Documentation
 
-### Code-Beispiele
-Repository mit Implementierungsbeispielen:
+- **EDDN Schema**: Data format specifications
+- **EDSM API**: Complete endpoint reference
+- **Inara API**: Community data access
+- **Journal Events**: Frontier's official documentation
+
+### Code Examples
+Repository with implementation examples:
+
 ```python
 import requests
 
-# EDSM System-Informationen abrufen
+# Get EDSM system information
 response = requests.get(
     "https://www.edsm.net/api-v1/system",
     params={"systemName": "Sol", "showInformation": 1}
@@ -104,44 +116,50 @@ response = requests.get(
 system_data = response.json()
 ```
 
-## 🌐 Community-Projekte
+## 🌐 Community Projects
 
 ### Open Source Tools
-- **EDPathFinder**: Route-Optimierung
-- **ED Engineer**: Material-Tracking
+
+- **EDPathFinder**: Route optimization
+- **ED Engineer**: Material tracking
 - **EDDI**: Voice-activated assistant
-- **Elite Observatory**: Signal-Überwachung
+- **Elite Observatory**: Signal monitoring
 
-### Daten-Beiträger
-So können Sie zur Datenqualität beitragen:
-1. **EDMC installieren** und konfigurieren
-2. **Automatisches Uploading** aktivieren
-3. **Marktdaten sammeln** durch normales Spielen
-4. **Community profitiert** von Ihren Beiträgen
+### Data Contributors
+How you can contribute to data quality:
 
-## 📊 Datenqualität
+1. **Install EDMC** and configure
+2. **Enable automatic uploading**
+3. **Collect market data** through normal gameplay
+4. **Community benefits** from your contributions
 
-### Aktualität
-- **EDDN**: Sekunden bis Minuten
-- **EDSM**: Echtzeit bei EDMC-Nutzung
-- **Inara**: Stündliche Updates
-- **EDDB**: Tägliche Synchronisation
+## 📊 Data Quality
 
-### Abdeckung
-- **Core Systems**: 99%+ Abdeckung
-- **Bubble**: 95%+ Abdeckung  
-- **Outer Rim**: 60%+ Abdeckung
-- **Deep Space**: Community-abhängig
+### Timeliness
 
-## 🔐 API-Zugang
+- **EDDN**: Seconds to minutes
+- **EDSM**: Real-time with EDMC usage
+- **Inara**: Hourly updates
+- **EDDB**: Daily synchronization
+
+### Coverage
+
+- **Core Systems**: 99%+ coverage
+- **Bubble**: 95%+ coverage
+- **Outer Rim**: 60%+ coverage
+- **Deep Space**: Community-dependent
+
+## 🔐 API Access
 
 ### Rate Limits
-Respektieren Sie API-Limits:
-- **EDSM**: 100 Requests/Minute
-- **Inara**: 200 Requests/Minute
-- **EDDB**: Download-basiert
+Respect API limits:
 
-### Authentifizierung
+- **EDSM**: 100 requests/minute
+- **Inara**: 200 requests/minute
+- **EDDB**: Download-based
+
+### Authentication
+
 ```python
 headers = {
     'User-Agent': 'YourApp/1.0 (contact@yourapp.com)',
@@ -151,4 +169,4 @@ headers = {
 
 ---
 
-*Diese Ressourcen werden von der Community gepflegt. Beiträge zur Datenqualität sind immer willkommen!*
+*These resources are maintained by the community. Contributions to data quality are always welcome!*

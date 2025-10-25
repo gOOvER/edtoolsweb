@@ -1,62 +1,71 @@
 # Elite Dangerous Tools Website
 
-Eine moderne, responsive MkDocs-Webseite für Elite Dangerous Tools, optimiert für Cloudflare Pages.
+# Elite Dangerous Tools Website
+
+A modern, responsive MkDocs website for Elite Dangerous tools, optimized for Cloudflare Pages.
 
 ## 🚀 Features
 
-- **Elite Dangerous Design**: Authentische Farbpalette (Orange/Schwarz/Blau)
-- **Material Design**: Moderne, responsive Benutzeroberfläche
-- **Dark/Light Theme**: Automatischer Theme-Switcher
-- **Tool-Kategorien**: Exploration, Trading, Engineering, Combat
-- **Community-Integration**: Discord, GitHub, Reddit Links
-- **API-Dokumentation**: Umfassende Entwickler-Ressourcen
-- **Mobile-optimiert**: Funktioniert perfekt auf allen Geräten
+- **Elite Dangerous Design**: Authentic color palette (Orange/Black/Blue)
+- **Material Design**: Modern, responsive user interface
+- **Dark/Light Theme**: Automatic theme switcher
+- **Multilingual Support**: English and German versions
+- **Tool Categories**: Exploration, Trading, Engineering, Combat
+- **Community Integration**: Discord, GitHub, Reddit links
+- **API Documentation**: Comprehensive developer resources
+- **Mobile Optimized**: Works perfectly on all devices
 
-## 🛠️ Technologie
+## 🌐 Languages
 
-- **MkDocs**: Statischer Site-Generator
-- **Material Theme**: Modernes Design-Framework
-- **Cloudflare Pages**: Hosting und CDN
-- **GitHub Actions**: Automatisches Deployment
-- **Elite Dangerous APIs**: EDDN, EDSM, Inara Integration
+- **English**: Default language (`/`)
+- **German**: German version (`/de/`)
+- **Automatic Detection**: Based on URL path
 
-## 🔧 Lokale Entwicklung
+## 🛠️ Technology
 
-### Voraussetzungen
+- **MkDocs**: Static site generator
+- **Material Theme**: Modern design framework
+- **Cloudflare Pages**: Hosting and CDN
+- **GitHub Actions**: Automatic deployment
+- **Elite Dangerous APIs**: EDDN, EDSM, Inara integration
+
+## 🔧 Local Development
+
+### Requirements
 - Python 3.11+
 - pip
 - Git
 
 ### Setup
 ```bash
-# Repository klonen
+# Clone repository
 git clone https://github.com/yourusername/edtoolsweb.git
 cd edtoolsweb
 
-# Python Virtual Environment erstellen
+# Create Python virtual environment
 python -m venv venv
 venv\Scripts\activate  # Windows
 
-# Dependencies installieren
+# Install dependencies
 pip install -r requirements.txt
 
-# Development Server starten
+# Start development server
 mkdocs serve
 ```
 
-Die Seite ist dann unter `http://localhost:8000` erreichbar.
+The site will be available at `http://localhost:8000`.
 
-## 🚀 Deployment auf Cloudflare Pages
+## 🚀 Deployment to Cloudflare Pages
 
-1. Repository zu GitHub pushen
-2. Cloudflare Pages mit GitHub verbinden
-3. Build-Kommando: `pip install -r requirements.txt && mkdocs build`
-4. Output-Verzeichnis: `site`
-5. Automatisches Deployment bei Git-Push
+1. Push repository to GitHub
+2. Connect Cloudflare Pages with GitHub
+3. Build command: `pip install -r requirements.txt && mkdocs build`
+4. Output directory: `site`
+5. Automatic deployment on Git push
 
-## 🎨 Design-System
+## 🎨 Design System
 
-### Elite Dangerous Farben
+### Elite Dangerous Colors
 ```css
 :root {
   --ed-orange: #ff6600;        /* Primary */
@@ -65,6 +74,26 @@ Die Seite ist dann unter `http://localhost:8000` erreichbar.
   --ed-dark-grey: #1a1a1a;     /* Surface */
   --ed-text-light: #e0e0e0;    /* Text */
 }
+```
+
+## 📁 Project Structure
+
+```
+edtoolsweb/
+├── docs/                      # Markdown files
+│   ├── index.md              # English homepage
+│   ├── de/                   # German translations
+│   │   └── index.md          # German homepage
+│   ├── tools/                # Tool documentation
+│   ├── resources/            # API & database info
+│   ├── community/            # Community pages
+│   ├── stylesheets/          # Custom CSS
+│   ├── javascripts/          # Custom JavaScript
+│   └── assets/               # Images and icons
+├── .github/workflows/        # CI/CD pipeline
+├── mkdocs.yml               # MkDocs configuration
+├── requirements.txt         # Python dependencies
+└── README.md               # This file
 ```
 
 ---

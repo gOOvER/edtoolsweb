@@ -1,92 +1,95 @@
-# Über Elite Dangerous Tools
+# About Elite Dangerous Tools
 
-## 🚀 Unsere Mission
+## 🚀 Our Mission
 
-Elite Dangerous Tools wurde von Commanders für Commanders entwickelt. Unser Ziel ist es, das beste Spielerlebnis durch nützliche und zuverlässige Tools zu bieten, die das komplexe Universum von Elite Dangerous zugänglicher machen.
+Elite Dangerous Tools was developed by Commanders for Commanders. Our goal is to provide the best gaming experience through useful and reliable tools that make the complex universe of Elite Dangerous more accessible.
 
-## 👥 Das Team
+## 👥 The Team
 
-Wir sind eine Gruppe leidenschaftlicher Elite Dangerous Spieler, die ihre Zeit und Expertise einsetzen, um der Community zu helfen:
+We are a group of passionate Elite Dangerous players who dedicate their time and expertise to help the community:
 
-- **Entwickler**: Erfahrene Programmierer mit jahrelanger ED-Erfahrung
-- **Datenanalysten**: Spezialisten für galaktische Datenverarbeitung
-- **UI/UX Designer**: Fokus auf benutzerfreundliche Interfaces
-- **Community Manager**: Verbindung zwischen Entwicklung und Spielern
+- **Developers**: Experienced programmers with years of ED experience
+- **Data Analysts**: Specialists in galactic data processing
+- **UI/UX Designers**: Focus on user-friendly interfaces
+- **Community Managers**: Connection between development and players
 
-## 🛠️ Technologie
+## 🛠️ Technology
 
-Unsere Webseite nutzt moderne Technologien:
+Our website uses modern technologies:
 
 - **Frontend**: MkDocs Material Design
 - **Hosting**: Cloudflare Pages
-- **Daten**: EDDN, EDSM, Inara APIs
-- **Performance**: Edge-Computing für schnelle Ladezeiten
+- **Data**: EDDN, EDSM, Inara APIs
+- **Performance**: Edge computing for fast loading times
 
-## 📊 Statistiken
+## 📊 Statistics
 
-- **Über 50.000** aktive Commander nutzen unsere Tools
-- **99.9%** Uptime dank Cloudflare Infrastructure
-- **< 2 Sekunden** durchschnittliche Ladezeit
-- **24/7** automatische Datenaktualisierung
+- **Over 50,000** active Commanders use our tools
+- **99.9%** uptime thanks to Cloudflare infrastructure
+- **< 2 seconds** average loading time
+- **24/7** automatic data updates
 
-## 🌟 Community Beiträge
+## 🌟 Community Contributions
 
-Elite Dangerous Tools ist nur durch die Unterstützung der Community möglich:
+Elite Dangerous Tools is only possible through community support:
 
-### Datenquellen
+### Data Sources
+
 - **EDDN** - Elite Dangerous Data Network
-- **EDSM** - Elite Dangerous Star Map  
-- **Inara** - Community-Datenbank
+- **EDSM** - Elite Dangerous Star Map
+- **Inara** - Community Database
 - **EDDB** - Elite Dangerous Database
 
 ### Open Source
-Alle unsere Tools sind Open Source und auf GitHub verfügbar. Beiträge sind willkommen!
+All our tools are open source and available on GitHub. Contributions are welcome!
 
-## 🤝 Mitwirken
+## 🤝 Contributing
 
-Sie können auf verschiedene Weise zur Verbesserung beitragen:
+You can contribute to improvements in various ways:
 
 ### 🐛 Bug Reports
-Gefundene Fehler können Sie über GitHub Issues melden.
+Found bugs can be reported via GitHub Issues.
 
-### 💡 Feature Requests  
-Neue Ideen für Tools sind immer willkommen.
+### 💡 Feature Requests
+New ideas for tools are always welcome.
 
 ### 👨‍💻 Code Contributions
-Pull Requests für Verbesserungen und neue Features.
+Pull requests for improvements and new features.
 
-### 💰 Unterstützung
-Hilft bei Serverkosten und Entwicklungszeit:
+### 💰 Support
+Helps with server costs and development time:
+
 - GitHub Sponsors
-- PayPal Spenden
-- Patreon Abonnement
+- PayPal Donations
+- Patreon Subscription
 
-## 📞 Kontakt
+## 📞 Contact
 
 - **Discord**: [Elite Tools Community](https://discord.gg/edtools)
 - **GitHub**: [github.com/yourusername/edtoolsweb](https://github.com/yourusername/edtoolsweb)
 - **Email**: contact@edtools.pages.dev
 - **Reddit**: [r/EliteDangerous](https://reddit.com/r/EliteDangerous)
 
-## 📜 Lizenz
+## 📜 License
 
-Elite Dangerous Tools steht unter der MIT-Lizenz. Die verwendeten Spieldaten gehören Frontier Developments.
+Elite Dangerous Tools is under the MIT license. The game data used belongs to Frontier Developments.
 
-## 🙏 Danksagungen
+## 🙏 Acknowledgments
 
-Besonderen Dank an:
+Special thanks to:
 
-- **Frontier Developments** für Elite Dangerous
-- **EDCD (Elite Dangerous Community Developers)** für APIs und Tools
-- **Material Design** Team für das hervorragende Theme
-- **Cloudflare** für kostenloses Hosting
-- **Alle Contributors** und Community-Mitglieder
+- **Frontier Developments** for Elite Dangerous
+- **EDCD (Elite Dangerous Community Developers)** for APIs and tools
+- **Material Design** team for the excellent theme
+- **Cloudflare** for free hosting
+- **All contributors** and community members
 
 ---
 
 *Fly safe, Commander! o7*
 
 <div class="ed-hud-border" style="padding: 1rem; margin: 2rem 0; text-align: center;">
-  <strong>🌌 "In space, no one can hear you dock..."</strong><br>
-  <em>- Ein weiser Commander</em>
+  <strong>🌌 "In space, no one can hear you dock..."</strong>
+  <br>
+  <em>- A wise Commander</em>
 </div>

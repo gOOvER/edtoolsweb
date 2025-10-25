@@ -54,21 +54,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // CMDR greeting based on time of day
+    // CMDR greeting based on time of day and language
     function displayCMDRGreeting() {
         const greetingElement = document.querySelector('.cmdr-greeting');
         if (greetingElement) {
             const hour = new Date().getHours();
+            const isGerman = window.location.pathname.includes('/de/');
             let greeting;
             
-            if (hour < 6) {
-                greeting = "Gute Nacht, Commander! Die Galaxis schläft nie.";
-            } else if (hour < 12) {
-                greeting = "Guten Morgen, Commander! Bereit für neue Abenteuer?";
-            } else if (hour < 18) {
-                greeting = "Guten Tag, Commander! Die Sterne warten auf Sie.";
+            if (isGerman) {
+                if (hour < 6) {
+                    greeting = "Gute Nacht, Commander! Die Galaxis schläft nie.";
+                } else if (hour < 12) {
+                    greeting = "Guten Morgen, Commander! Bereit für neue Abenteuer?";
+                } else if (hour < 18) {
+                    greeting = "Guten Tag, Commander! Die Sterne warten auf Sie.";
+                } else {
+                    greeting = "Guten Abend, Commander! Zeit für gefährliche Missionen.";
+                }
             } else {
-                greeting = "Guten Abend, Commander! Zeit für gefährliche Missionen.";
+                if (hour < 6) {
+                    greeting = "Good night, Commander! The galaxy never sleeps.";
+                } else if (hour < 12) {
+                    greeting = "Good morning, Commander! Ready for new adventures?";
+                } else if (hour < 18) {
+                    greeting = "Good day, Commander! The stars await you.";
+                } else {
+                    greeting = "Good evening, Commander! Time for dangerous missions.";
+                }
             }
             
             greetingElement.textContent = greeting;
